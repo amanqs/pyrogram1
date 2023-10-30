@@ -178,7 +178,6 @@ class Client(Methods, Scaffold):
 
     APP_VERSION = f"Pyrogram {__version__}"
     DEVICE_MODEL = f"AmangBot"
-    SYSTEM_VERSION = f"{platform.system()} {platform.release()}"
 
     def __init__(
         self,
