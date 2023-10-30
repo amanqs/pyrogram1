@@ -176,13 +176,17 @@ class Client(Methods, Scaffold):
             terminal environments.
     """
 
+    APP_VERSION = f"Pyrogram {__version__}"
+    DEVICE_MODEL = f"AmangBot"
+    SYSTEM_VERSION = f"{platform.system()} {platform.release()}"
+
     def __init__(
         self,
         session_name: Union[str, Storage],
         api_id: Union[int, str] = None,
         api_hash: str = None,
-        app_version: str = None,
-        device_model: str = None,
+        app_version: str = APP_VERSION,
+        device_model: str = DEVICE_MODEL,
         system_version: str = None,
         lang_code: str = None,
         ipv6: bool = False,
